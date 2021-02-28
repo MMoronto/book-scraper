@@ -2,3 +2,12 @@ CLI
     -Scraper
         -Index
             -Movie_synopsis
+bs_20 = BookseriesScraper.new(20).scrape
+bs_20.books.first.title #=> Leviathan's Wake
+
+
+
+1. We need a BookseriesScraper Class
+2. That class needs to instantiate the Bookseries for that session? number
+3. We need to scrape the details of that Bookseries
+4. We need to scrape the individual books for that Bookseries and add them to that instance
