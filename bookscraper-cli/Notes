@@ -2,8 +2,8 @@ CLI
     -Scraper
         -Index
             -Movie_synopsis
-bs_20 = BookseriesScraper.new(20).scrape
-bs_20.books.first.title #=> Leviathan's Wake
+bs_56399 = BookseriesScraper.new(56399).scrape
+bs_56399.books.first.title #=> Leviathan Wakes
 
 
 
