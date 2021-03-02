@@ -16,5 +16,14 @@ class BookseriesScraper
     def scrape_details
         # populate @bookseries with more data from the bookseries site
         @bookseries.release_date = @doc.search("gr-metaText.u-inlineBlock").text.gsub("series #{@series_number} - ", "").strip
-    end 
+    end
+
+    def scrape_books
+        # I would break the convention of only knowing about the Bookseries and let it create books
+        @doc.search("").each do |book_table|
+            # instantiate the book
+            # scrape the data
+            # add the book to the bookseries
+            
+    end
 end
