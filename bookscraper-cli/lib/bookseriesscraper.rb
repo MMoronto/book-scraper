@@ -15,6 +15,6 @@ class BookseriesScraper
 
     def scrape_details
         # populate @bookseries with more data from the bookseries site
-        release_date = @doc.search("gr-metaText.u-inlineBlock").text.text.gsub("series #{@number}")
+        release_date = @doc.search("gr-metaText.u-inlineBlock").text.text.gsub("series #{@series_number}")
     end 
 end
