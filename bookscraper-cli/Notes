@@ -2,8 +2,8 @@ CLI
     -Scraper
         -Index
             -Movie_synopsis
-bs_56399 = BookseriesScraper.new(56399).scrape
-bs_56399.books.first.title #=> Leviathan Wakes
+bs_352036 = BookseriesScraper.new(352036).scrape
+bs_352036.books.first.title #=> Dune
 
 
 
