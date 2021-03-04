@@ -20,7 +20,7 @@ class BookseriesScraper
 
     def scrape_books
         # I would break the convention of only knowing about the Bookseries and let it create books
-        @doc.search("").each do |book_table|
+        @doc.search("listWithDividers").each do |book_table|
             # instantiate the book
             # scrape the data
             # add the book to the bookseries
