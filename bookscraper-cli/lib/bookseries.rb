@@ -1,8 +1,8 @@
 class InvalidType < StandardError; end
 
 class Bookseries
-    attr_accessor :series_number, :release_date
-    attr_reader :books
+    attr_accessor :series_number, :boxset_price
+    # attr_reader :books
 
     def initialize
         @books = []
@@ -17,6 +17,7 @@ class Bookseries
             raise InvalidType, "must be a Book" 
         else
             @books << book
+        end
     end
 
     
